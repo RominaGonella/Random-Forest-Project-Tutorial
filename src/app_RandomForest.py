@@ -81,6 +81,10 @@ df_test.dropna(inplace = True)
 X_test = df_test.drop(columns = 'Survived')
 y_test = df_test['Survived']
 
+# creo dataset test actualizado y guardo
+df_test = pd.concat([X_test, y_test], axis = 1)
+df_test.to_csv('data/processed/datos_evaluacion_procesados.csv', index = False)
+
 # STEP 3: APLICO RANDOM FOREST CON PARÁMETROS OPTIMIZADOS EN NOTEBOOK
 
 mod_best = RandomForestClassifier(random_state = 3007, n_estimators = 300, min_samples_split = 5, min_samples_leaf = 2, max_depth = 10, criterion = 'entropy', bootstrap = False)
