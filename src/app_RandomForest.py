@@ -1,4 +1,4 @@
-# STEP 1: DATOS
+# STEP 1: CARGAR DATOS
 
 # ejecutar en consola
 # pip install pandas
