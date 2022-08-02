@@ -9,4 +9,5 @@
 # Resumen del proceso (XGBoost)
 
 1. En este ejercicio se utiliza el mismo dataset y repositorio que en el ejercicio sobre Random Forest. Primero se cargan los datasets ya preprocesados, y luego se aplica el modelo XGBoost.
-2. Se estima un modelo XGBoost inicial y luego se optimiza sobre algunos parámetros. En ambos casos se grafica la importancia de las variables y el clasification report.
+2. Se estima un modelo XGBoost inicial y luego se optimiza sobre algunos parámetros. En ambos casos se grafica la importancia de las variables y el clasification report, se comparan los resultados.
+3. El modelo con hiperparámetros optimizados no mejora la performance del modelo inicial, por lo que se elige al modelo inicial como el modelo final y se lo guarda.
